@@ -21,14 +21,16 @@
 title: Harsha
 email: harshasinha0@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I like to cick photographs.
+    I like to click photographs.
+    BITS Pilani Hyderabad
+    HSBC
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: HarshaSinha63
 github_username:  harsha63
 
 # Build settings
-theme: jekyll-theme-minimal
+theme: minima
 plugins:
   - jekyll-feed
 

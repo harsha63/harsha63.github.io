@@ -1,63 +1,133 @@
+
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harsha | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Harsha</h1>
-    <p>Consultant Specialist @ HSBC | Data Engineer | Tech Enthusiast</p>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a data platform engineer with experience across infrastructure, observability, and application development. Currently working at HSBC, I specialize in PySpark, Terraform, CI/CD pipelines, and monitoring tools like Acceldata Pulse and Grafana.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Languages: Python, C++, Java, Shell, SQL, YAML</li>
-      <li>Tools: Docker, Kubernetes, Jenkins, GitHub, Postman, Terraform</li>
-      <li>Monitoring: Acceldata Pulse, Prometheus, Grafana, Splunk</li>
-      <li>Frameworks: Apache Spark, Ansible</li>
-    </ul>
+        <li>Tools: Docker, Kubernetes, Jenkins, GitHub, Postman, Terraform</li>
+      </ul>
+      <ul>
+        <li>Monitoring: Acceldata Pulse, Prometheus, Grafana, Splunk</li>
+        <li>Frameworks: Apache Spark, Ansible</li>
+      </ul>
+    </div>
   </section>
 
   <section id="experience">
     <h2>Experience</h2>
-    <h3>HSBC – Consultant Specialist</h3>
-    <p><em>Sept 2022 – Present</em></p>
-    <ul>
-      <li>Built scalable PySpark-based ingestion framework for 5+ data assets</li>
-      <li>Deployed Acceldata Pulse across 80+ servers and resolved 10+ Spark monitoring issues</li>
-      <li>Improved PDPTTY scores and automated change request compliance with Swagger API</li>
-      <li>Resolved 20+ production issues using Splunk and AppDynamics</li>
-    </ul>
+    <div>
+      <h3>HSBC – Consultant Specialist <em>(Sept 2022 – Present)</em></h3>
+      <ul>
+        <li>Built scalable PySpark-based ingestion framework for 5+ data assets</li>
+        <li>Deployed Acceldata Pulse across 80+ servers and resolved 10+ Spark monitoring issues</li>
+        <li>Improved PDPTTY scores and automated change request compliance with Swagger API</li>
+        <li>Resolved 20+ production issues using Splunk and AppDynamics</li>
+      </ul>
 
-    <h3>HSBC – Software Engineer, Data Centre Ops</h3>
-    <p><em>Jul 2021 – Sept 2022</em></p>
-    <ul>
-      <li>Managed global data center operations across 7 regions and 23 countries</li>
-      <li>Improved inventory processes and compliance through UI testing and data quality checks</li>
-    </ul>
+      <h3>HSBC – Software Engineer, Data Centre Ops <em>(Jul 2021 – Sept 2022)</em></h3>
+      <ul>
+        <li>Managed global data center operations across 7 regions and 23 countries</li>
+        <li>Improved inventory processes and compliance through UI testing and data quality checks</li>
+      </ul>
 
-    <h3>Apollo Tyres – SDE Intern</h3>
-    <p><em>Jul 2021 – Sept 2022</em></p>
-    <ul>
-      <li>Built a mobile app using MERN stack, designed UI in Figma/Balsamiq, and integrated APIs</li>
-    </ul>
+      <h3>Apollo Tyres – SDE Intern <em>(Jul 2021 – Sept 2022)</em></h3>
+      <ul>
+        <li>Built a mobile app using MERN stack, designed UI in Figma/Balsamiq, and integrated APIs</li>
+      </ul>
+    </div>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><strong>Food Delivery Android App</strong> – <a href="https://github.com/harsha63/Foodie-">GitHub</a></li>
-      <li><strong>Gesture Control VLC Player</strong> – <a href="https://github.com/harsha63/VLCGestureControl">GitHub</a></li>
-    </ul>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+      <div style="border: 1px solid #ccc; padding: 1rem; border-radius: 8px;">
+        <h3>Food Delivery App</h3>
+        <p>Android app for food delivery. Firebase backend.</p>
+        <a href="https://github.com/harsha63/Foodie-">GitHub →</a>
+      </div>
+      <div style="border: 1px solid #ccc; padding: 1rem; border-radius: 8px;">
+        <h3>Gesture Control VLC</h3>
+        <p>Arduino-powered hand gesture controller for VLC media.</p>
+        <a href="https://github.com/harsha63/VLCGestureControl">GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="photographs">
+    <h2>Photographs</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+      <img src="photos/photo1.jpg" alt="Photo 1" style="width: 100%; border-radius: 8px;">
+      <img src="photos/photo2.jpg" alt="Photo 2" style="width: 100%; border-radius: 8px;">
+      <img src="photos/photo3.jpg" alt="Photo 3" style="width: 100%; border-radius: 8px;">
+      <!-- Add more photos in /photos/ folder -->
+    </div>
   </section>
 
   <section id="contact">
@@ -67,7 +137,7 @@
     <p>LinkedIn: <a href="https://in.linkedin.com/in/harsha-586529152">Harsha</a></p>
   </section>
 
-  <footer>
+  <footer style="text-align: center; padding: 2rem; background-color: #eee;">
     <p>© 2025 Harsha</p>
   </footer>
 </body>

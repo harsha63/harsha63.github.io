@@ -7,42 +7,41 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section id="hero" style="text-align: center; padding: 4rem 1rem; background-color: #2b6777; color: white;">
-    <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">Harsha</h1>
-    <p style="font-size: 1.25rem;">Consultant Specialist @ HSBC | Data Engineer | Tech Enthusiast</p>
-  </section>
+  <div class="left-panel">
+    <h1>Harsha</h1>
+    <p>Consultant Specialist @ HSBC<br>Data Engineer | Tech Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#photographs">Photographs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 
-  <nav style="text-align: center; padding: 1rem; background-color: #f4f4f4;">
-    <a href="#about">About</a> |
-    <a href="#skills">Skills</a> |
-    <a href="#experience">Experience</a> |
-    <a href="#projects">Projects</a> |
-    <a href="#photographs">Photographs</a> |
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="right-content">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a data platform engineer with experience across infrastructure, observability, and application development. Currently working at HSBC, I specialize in PySpark, Terraform, CI/CD pipelines, and monitoring tools like Acceldata Pulse and Grafana.</p>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a data platform engineer with experience across infrastructure, observability, and application development. Currently working at HSBC, I specialize in PySpark, Terraform, CI/CD pipelines, and monitoring tools like Acceldata Pulse and Grafana.</p>
-  </section>
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="grid">
+        <ul>
+          <li>Languages: Python, C++, Java, Shell, SQL, YAML</li>
+          <li>Tools: Docker, Kubernetes, Jenkins, GitHub, Postman, Terraform</li>
+        </ul>
+        <ul>
+          <li>Monitoring: Acceldata Pulse, Prometheus, Grafana, Splunk</li>
+          <li>Frameworks: Apache Spark, Ansible</li>
+        </ul>
+      </div>
+    </section>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-      <ul>
-        <li>Languages: Python, C++, Java, Shell, SQL, YAML</li>
-        <li>Tools: Docker, Kubernetes, Jenkins, GitHub, Postman, Terraform</li>
-      </ul>
-      <ul>
-        <li>Monitoring: Acceldata Pulse, Prometheus, Grafana, Splunk</li>
-        <li>Frameworks: Apache Spark, Ansible</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <div>
+    <section id="experience">
+      <h2>Experience</h2>
       <h3>HSBC – Consultant Specialist <em>(Sept 2022 – Present)</em></h3>
       <ul>
         <li>Built scalable PySpark-based ingestion framework for 5+ data assets</li>
@@ -50,55 +49,53 @@
         <li>Improved PDPTTY scores and automated change request compliance with Swagger API</li>
         <li>Resolved 20+ production issues using Splunk and AppDynamics</li>
       </ul>
-
       <h3>HSBC – Software Engineer, Data Centre Ops <em>(Jul 2021 – Sept 2022)</em></h3>
       <ul>
         <li>Managed global data center operations across 7 regions and 23 countries</li>
         <li>Improved inventory processes and compliance through UI testing and data quality checks</li>
       </ul>
-
       <h3>Apollo Tyres – SDE Intern <em>(Jul 2021 – Sept 2022)</em></h3>
       <ul>
         <li>Built a mobile app using MERN stack, designed UI in Figma/Balsamiq, and integrated APIs</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-      <div style="border: 1px solid #ccc; padding: 1rem; border-radius: 8px;">
-        <h3>Food Delivery App</h3>
-        <p>Android app for food delivery. Firebase backend.</p>
-        <a href="https://github.com/harsha63/Foodie-">GitHub →</a>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Food Delivery App</h3>
+          <p>Android app for food delivery. Firebase backend.</p>
+          <a href="https://github.com/harsha63/Foodie-">GitHub →</a>
+        </div>
+        <div class="card">
+          <h3>Gesture Control VLC</h3>
+          <p>Arduino-powered hand gesture controller for VLC media.</p>
+          <a href="https://github.com/harsha63/VLCGestureControl">GitHub →</a>
+        </div>
       </div>
-      <div style="border: 1px solid #ccc; padding: 1rem; border-radius: 8px;">
-        <h3>Gesture Control VLC</h3>
-        <p>Arduino-powered hand gesture controller for VLC media.</p>
-        <a href="https://github.com/harsha63/VLCGestureControl">GitHub →</a>
+    </section>
+
+    <section id="photographs">
+      <h2>Photographs</h2>
+      <div class="grid">
+        <img src="photos/photo1.jpg" alt="Photo 1">
+        <img src="photos/photo2.jpg" alt="Photo 2">
+        <img src="photos/photo3.jpg" alt="Photo 3">
+        <!-- Add more photos to the /photos/ directory -->
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="photographs">
-    <h2>Photographs</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-      <img src="photos/photo1.jpg" alt="Photo 1" style="width: 100%; border-radius: 8px;">
-      <img src="photos/photo2.jpg" alt="Photo 2" style="width: 100%; border-radius: 8px;">
-      <img src="photos/photo3.jpg" alt="Photo 3" style="width: 100%; border-radius: 8px;">
-      <!-- Add more photos in /photos/ folder -->
-    </div>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:603.harsha@gmail.com">603.harsha@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/harsha63">harsha63</a></p>
+      <p>LinkedIn: <a href="https://in.linkedin.com/in/harsha-586529152">Harsha</a></p>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:603.harsha@gmail.com">603.harsha@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/harsha63">harsha63</a></p>
-    <p>LinkedIn: <a href="https://in.linkedin.com/in/harsha-586529152">Harsha</a></p>
-  </section>
-
-  <footer style="text-align: center; padding: 2rem; background-color: #eee;">
-    <p>© 2025 Harsha</p>
-  </footer>
+    <footer>
+      <p>© 2025 Harsha</p>
+    </footer>
+  </div>
 </body>
 </html>
